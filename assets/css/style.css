@@ -1,0 +1,36 @@
+#clv_form h1{
+	margin-bottom: 25px;
+}
+#clv_form .form-field{
+	display:block;
+}
+#clv_form .row{
+	display:flex;
+	align-item:center;
+	margin-bottom:5px;
+}
+#clv_form input[type="button"].button-primary {
+    display: block;
+    clear: right;
+    float: none !important;
+    margin-top: 5px;
+}
+#clv_form .left-col{
+	width:150px;
+}
+#clv_form .left-col, #clv_form .right-col{
+	margin-top:5px;
+}
+#clv_form input[type="submit"]{
+	margin-top:25px;
+}
+input#clv_api_url {
+    width: 360px !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+label#clv_api_lebel{
+	vertical-align: -webkit-baseline-middle;
+    font-size: 14px;
+    font-weight: 600;
+}

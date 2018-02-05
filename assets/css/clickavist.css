@@ -1,0 +1,247 @@
+table {
+    border-collapse: collapse;
+    margin: 0 0 1.5em;
+    width: 100%;
+	border: 0px !important;
+}
+tr th, tr td {
+    border: 0px !important;
+}
+.tweet_char{
+	font-size: 12px !important;
+}	
+input.clv_email_cc {
+    width: 87%;
+}
+.tweetError, .emailSubError, .emailBodyError{
+	color:red;
+	font-size: 12px !important;
+}
+.boldHeader {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+.boldHeader tr th {
+    padding: 10px 5px;
+	font-family: arial;
+	font-size: 14px;
+}
+.table_body_data tr{
+	border-bottom:1px solid #595959;
+}
+.table_body_data tr.odd{
+	background: #FFF;
+}
+.table_body_data tr.even{
+	background: #EEEEEE;
+}
+.table_body_data tr td{
+	padding: 10px 5px;
+	font-family: arial;
+	font-size: 14px;
+}
+.table_body_data tr td a{
+	color: #3679BC;
+	text-decoration: none !important;
+	box-shadow: none !important;
+	font-family: arial;
+	cursor:pointer;
+}
+
+.table_body_data tr td:nth-child(3) {
+    color: #3679BC;
+	text-decoration: none !important;
+	box-shadow: none !important;
+	font-family: arial;
+}
+
+
+
+.clickavist_tweet_popup, .clickavist_email_popup { display:none; }
+.clickavist_tweet_popup_widget, .clickavist_email_popup_widget { display:none; }
+
+.clickavist_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  display:none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.clickavist_overlay.clickavist_light {
+  background: rgba(255, 255, 255, 0.5);
+}
+.clickavist_overlay .clickavist_cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.clickavist_overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.clickavist_popup {
+  margin: 75px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  max-width: 550px;
+  width:95%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.clickavist_light .clickavist_popup {
+  border-color: #aaa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.clickavist_popup h2 {
+  margin-top: 0;
+  color: #666;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+.clickavist_popup .clickavist_close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -16px;
+    right: -12px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    line-height: 28px;
+    text-align: center;
+    background: #ddd;
+}
+.clickavist_popup .clickavist_close:hover {
+	opacity: 1;
+}
+.clickavist_popup .clickavist_content {
+	  max-height: 400px;
+	  overflow: auto;
+}
+.clickavist_popup p {
+	margin: 0 0 1em;
+}
+.clickavist_popup p:last-child {
+	margin: 0;
+}
+a.clickavist_close{
+	box-shadow: none;
+}
+.clickavist_form, .clickavist_form_field {
+	display: block;
+}
+.clickavist_form_field p, .clickavist_email_form  .clickavist_form_field input[type="text"] {
+    font-size: 12px;
+    padding: 10px;
+    border: 1px dashed #e1e1e1;
+    text-align: center;
+    margin: 20px 0 !important;
+}
+.clickavist_form_field textarea{
+	width:100%;
+	height:100px;
+}
+.clickavist_form_field.clickavist_flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-display: flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+}
+.clickavist_form_field .clickavist_formbtn {
+    text-decoration: none;
+    padding: 3px 15px;
+    background: #e1e1e1;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    border: 1px solid #d8d1d1;
+    border-radius: 3px;
+    line-height: 24px;
+    box-shadow: none;
+    text-transform: capitalize;
+	transition:all 0.3s ease 0s;
+	-webkit-transition:all 0.3s ease 0s;
+}
+.clickavist_form_field .clickavist_formbtn:hover {
+	background: #d8d1d1;
+}
+
+
+.clickavist_email_form  .clickavist_form_field.clickavist_flex p, .clickavist_email_form  .clickavist_form_field input[type="text"] {
+	width:87%;
+	
+}
+.clickavist_email_form  .clickavist_form_field input[type="text"]{
+	margin:10px 0 !important;
+	border-style:solid;
+	padding:13px 10px;
+}
+.clickavist_email_form  .clickavist_form_field input[type="text"],   .clickavist_form_field textarea {
+	font-size: 12px;
+	
+}
+.clickavist_email_form  .clickavist_form_field.clickavist_flex p{
+	margin:10px 0!important;
+	
+}
+.clickavist_email_form  .clickavist_form_field.clickavist_flex.clickavist_col4 p{
+	width:50%;
+	margin:10px 10px !important;
+}
+.clickavist_email_form  .clickavist_form_field.clickavist_flex.clickavist_col4 p ~ p{
+	margin-right:0 !important
+}
+.clickavist_form_field.clickavist_flex.clickavist_form_field1 p{
+	text-align:left;	
+}
+.clickavist_cc input{
+	text-align:left !important
+}
+
+a{
+	box-shadow: none !important;
+	cursor:pointer !important;
+}
+
+.j-flash-message {
+  position: fixed;
+  top: 100px;
+  right: -310px;
+  width: 300px;
+  min-height: 60px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  padding: 10px 20px;
+  z-index: 1000000;
+  box-shadow: 5px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.j-flash-message .j-flash-message__in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+}
+
+.j-flash-message_type_ok .j-flash-message__in { background-color: #00aa00; }
+
+.jflashclv {
+    display: none !important;
+}
